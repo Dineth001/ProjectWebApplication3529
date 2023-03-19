@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication3529</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication3529.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: aqua;">
+            <a class="navbar-brand" href="#" style="margin-left: 2%"> RAJI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Index" style="margin-left: 950px !important;" ;>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./AboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Staff">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Login">Log-in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="container" style="height: 220px;">
+            <div class="row">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> Address: No: 28 "Wedaniwasa", Goldern Park, Garanduwa, Kamburugamuwa. </li>
+                    <li><i class="fa fa-phone"></i> Phone  : 072 45 35 203 / 071 64 24 765</li>
+                    <li><i class="fa fa-envelope"></i> email  : rajini.ayurveda@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+  
+</body>
+</html>

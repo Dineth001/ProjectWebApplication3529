@@ -1,0 +1,228 @@
+﻿@page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs Rajini Ayurvedic Center</title>
+    <!--link rel="stylesheet" type="text/css" href="AboutUs.css"-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .text {
+            margin-top: 12px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif
+           
+        }
+
+            .text h2 {
+                text-align: center;
+                font-size: 24px;
+                color: #000000;
+                text-shadow: 1px 1px #000;
+            }
+
+            .text h1 {
+                text-align: center;
+                align-items: center;
+                margin-left: 30%;
+                align-items: center;
+                font-size: 48px;
+                color: #000000;
+                text-shadow: 1px 1px #000;
+            }
+
+            .text p {
+                font-size: 16px;
+                text-align: justify;
+                color: #000000;
+                text-shadow: 1px 1px #000;
+                margin-top: 20px;
+                line-height: 1.5;
+                max-width: 800px;
+                padding: 0 20px;
+            }
+
+        /* Navbar Brand */
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Navbar Toggler Icon */
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+        }
+
+        /* Navbar Links */
+        .navbar-nav .nav-link {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
+            padding: 0.5rem 1.5rem;
+        }
+
+            .navbar-nav .nav-link:hover,
+            .navbar-nav .nav-link:focus {
+                color: rgba(0, 0, 0, 1);
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+        /* Active Link */
+        .navbar-nav .active > .nav-link {
+            color: rgba(0, 0, 0, 1);
+            background-color: black;
+        }
+
+        .navbar {
+            background-color: hsl(195, 65%, 19%);
+        }
+
+
+        footer {
+            margin-top: 10px;
+            background-color: hsl(195, 65%, 19%);
+            padding: 24px 0;
+            font-size: 16px;
+            color: white;
+        }
+
+            footer h4 {
+                font-weight: bold;
+                margin-bottom: 10pxpx;
+                color: white;
+            }
+
+            footer ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            footer li {
+                line-height: 2;
+            }
+
+            footer i.fa {
+                font-size: 24px;
+                margin-right: 10px;
+                color: #000000;
+            }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .social-icons li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+                .social-icons li:last-child {
+                    margin-right: 0;
+                }
+
+            .social-icons a {
+                display: inline-block;
+                color: #000000;
+                font-size: 24px;
+                line-height: 1;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                background-color: hsl(195, 65%, 19%);
+                transition: all 0.3s ease-in-out;
+            }
+
+                .social-icons a:hover {
+                    background-color: hsl(195, 65%, 19%);
+                    color: #000000;
+                }
+
+    </style>
+
+</head>
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+<body>
+    <!--nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: aqua;">
+        <a class="navbar-brand" href="#" style="margin-left: 2%"> RAJI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html" style="margin-left: 950px !important;" ;>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Staff.html">Staff</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Login.html">Log-in</a>
+              </li>
+          </ul>
+        </div>
+      </nav-->
+    <h1 class="text" style="align-items:center; text-align:center; margin-top:80px;">Welcome to Rajini Ayurvedic Center</h1>
+
+    <div class="container">
+
+        <div class="text">
+            <iframe width="750" height="400" src="https://www.youtube.com/embed/I0Z6FPF8_4c" frameborder="1"></iframe>
+            <h2>About Us</h2>
+            <p style="margin-bottom:50px;">
+                Rajini Ayurvedic Center seeks to provide holistic ayurvedic help with a global perspective. Everyone can benefit! Ayurvedic Therapy offers very distinctive approaches to wellness and improvement of life, including full and body part massages, nasya, Marma Shakti Infusion Therapy, steam barth, precision aromatherapy, Whole Life coaching, and precise dietary suggestions. Rajini Ayurvedic Center provides these and other profoundly transformative practices to enable people to upgrade themselves and become more of who they really want to be.
+                Rajini Ayurvedic Center has a great history since 1970 and there are professional therapist and doctors here. So you no need to worry about safety and the quality of the service here.
+            </p>
+
+
+        </div>
+    </div>
+    <!--footer>
+      <div class="container" style="height: 220px;">
+        <div class="row">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fa fa-map-marker"></i> Address: No: 28 "Wedaniwasa", Goldern Park, Garanduwa, Kamburugamuwa. </li>
+              <li><i class="fa fa-phone"></i> Phone  : 072 45 35 203 / 071 64 24 765</li>
+              <li><i class="fa fa-envelope"></i> email  : rajini.ayurveda@gmail.com</li>
+            </ul>
+          </div>
+      </div>
+    </footer-->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
